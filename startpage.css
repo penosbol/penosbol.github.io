@@ -36,7 +36,7 @@ ul li a {
 }
 
 ul li a:hover {
-  background-color: #9bafff;
+  background-color: #73a9ed;
   text-decoration: underline;
   font-weight: 900;
 }
@@ -52,14 +52,9 @@ h1 {
 
 }
 
-form {
-  
-  font-family: cursive;
-  font-size: larger;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+input[type=text] {
+  border: 2px solid #73a9ed;
+  border-radius: 8px;
 }
 
 
