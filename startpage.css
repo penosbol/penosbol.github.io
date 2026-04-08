@@ -29,14 +29,14 @@ ul li a {
   font-size: small;
   font-style: normal;
   font-weight: 500;
-  color: rgb(115, 15, 15);
+  color: rgb(255, 52, 52);
   text-align: center;
   padding: 15px 15px;
   text-decoration: none;
 }
 
 ul li a:hover {
-  background-color: #1d274f;
+  background-color: #9bafff;
   text-decoration: underline;
   font-weight: 900;
 }
