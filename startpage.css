@@ -1,0 +1,70 @@
+div {
+
+    width: 300px;
+    padding: 50px; 
+    margin: 50px;
+    border: 14px  dotted black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+ul {
+
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    color: rgb(9, 0, 33);
+
+}
+
+ul li {
+
+    float: left;
+
+}
+
+ul li a {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-style: normal;
+  font-weight: 500;
+  color: rgb(115, 15, 15);
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #1d274f;
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+h1 {
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  display: flex;
+
+}
+
+
+
+.bg-video {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-size: cover;
+  background: no-repeat center;
+  margin-left: 50vw;
+  user-select: none;
+  pointer-events: none;
+
+  /*additional tweaks for positioning, read more in the link above*/
+  height: 100%;
+  width: 177.77777778vh; /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 56.25vw; /* 100 * 9 / 16 */
+  
+}
