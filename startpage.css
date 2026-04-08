@@ -83,5 +83,6 @@ body {
 
   background-image: url('assets/tuffahhcat2.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
 
 }
