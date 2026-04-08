@@ -3,6 +3,7 @@
     width: 300px;
     padding: 50px; 
     margin: 50px;
-    border: dotted 14px black;
-    
+    border: 14px  dotted black;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
