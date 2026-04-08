@@ -46,8 +46,24 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   font-size: larger;
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+form {
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 
+body {
 
+  background-image: url('https://i.pinimg.com/1200x/4e/23/ee/4e23eec17e9fa8abf600cbe35b348633.jpg');
+
+}
