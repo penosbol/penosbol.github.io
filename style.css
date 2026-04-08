@@ -40,3 +40,11 @@ ul li a:hover {
   text-decoration: underline;
   font-weight: 900;
 }
+
+h1 {
+  
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  display: flex;
+
+}
