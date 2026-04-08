@@ -34,5 +34,5 @@ ul li a {
 
 ul li a:hover {
   background-color: #5185ff;
-  text-decoration: wavy;
+  text-decoration: underline;
 }
