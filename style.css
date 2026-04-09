@@ -4,29 +4,25 @@
   height: 800px;
   margin: 50px auto;
   box-shadow: 8px 8px 20px rgba(0,0,0,0.3);
-  
+
 }
 
 .cover {
 
-  width: 100%;
-  height: 100%;
-  background: #f5e6d0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 500px;
+  height: 800px;
+  margin-left: auto;
 
 }
 
 .cover .front {
 
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 800px;
   background-image: url('assets/book/cover.png');
   background-size: cover;
   background-position: center;
-
+  
 }
 
 .cover .back {
