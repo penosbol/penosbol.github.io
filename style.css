@@ -1,7 +1,8 @@
 .book {
 
-  height: 500px;
-  width: 800px;
+
+  width: 500px;
+  height: 800px;
   margin: 100px auto;
   background-color: green;
   box-shadow: 8px 8px 20px rgba(0,0,0,0.3);
@@ -18,7 +19,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
+}
+
+.cover .front {
+
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/book/cover.png');
+  background-size: cover;
+  background-position: center;
+
 }
 
 .cover .back {
