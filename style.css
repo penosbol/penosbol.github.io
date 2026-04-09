@@ -4,6 +4,7 @@
   height: 800px;
   margin: 50px auto;
   box-shadow: 8px 8px 20px rgba(0,0,0,0.3);
+  position: relative; 
 
 }
 
@@ -22,7 +23,7 @@
   background-image: url('assets/book/cover.png');
   background-size: cover;
   background-position: center;
-  
+
 }
 
 .cover .back {
