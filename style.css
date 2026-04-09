@@ -8,43 +8,12 @@ div {
 
 }
 
-ul {
+.book {
 
-    list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    color: rgb(9, 0, 33);
+  height: 500px;
+  width: 800px;
+  margin: 100px auto;
+  background-color: green;
 
-}
-
-ul li {
-
-    float: left;
-
-}
-
-ul li a {
-  display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
-  font-style: normal;
-  font-weight: 500;
-  color: rgb(255, 52, 52);
-  text-align: center;
-  padding: 15px 15px;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  background-color: #9bafff;
-  text-decoration: underline;
-  font-weight: 900;
-}
-
-h1 {
-  
-  font-family: 'Courier New', Courier, monospace;
-  font-size: larger;
-  display: flex;
 
 }
