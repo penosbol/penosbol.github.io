@@ -10,6 +10,8 @@
 
 }
 
+
+
 .cover {
 
   width: 500px;
@@ -18,9 +20,7 @@
   transform-style: preserve-3d;
   transform-origin: left center;
   transition: transform 0.8s ease;
-  cursor: pointer;
   position: relative;
-
 
 }
 
@@ -57,6 +57,7 @@
 
 
 
+
 .btn-container {
 
   text-align: center;
@@ -64,14 +65,23 @@
 
 }
 
-#Open, #Close {
+#Next, #Back {
 
   padding: 10px 30px;
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
   cursor: pointer;
-  
+
 }
+
+#Next:disabled, #Back:disabled {
+
+  opacity: 0.3;
+  cursor: not-allowed;
+
+}
+
+
 
 
 #page-1 {
@@ -81,6 +91,7 @@
   background: #00ccff;
 
 }
+
 
 #page-2 {
 
@@ -94,6 +105,7 @@
   z-index: 0;
 
 }
+
 
 #page-4 {
 
@@ -109,6 +121,47 @@
 }
 
 
+
+
 .flip {
+
+  width: 500px;
+  height: 800px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-style: preserve-3d;
+  transform-origin: left center;
+  transition: transform 0.8s ease;
+  cursor: pointer;
+  z-index: 2;
   display: none;
+
+}
+
+.flip .front {
+
+  width: 500px;
+  height: 800px;
+  background: #00ccff;
+  position: absolute;
+  backface-visibility: hidden;
+
+}
+
+.flip .back {
+
+  width: 500px;
+  height: 800px;
+  background: #ff6600;
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+
+}
+
+.flip.open {
+
+  transform: rotateY(-180deg);
+
 }

@@ -1,6 +1,7 @@
 const cover = document.querySelector('.cover');
 const page2 = document.getElementById('page-2');
 const page4 = document.getElementById('page-4');
+const flip = document.getElementById('page-2-flip');
 const nextBtn = document.getElementById('Next');
 const backBtn = document.getElementById('Back');
 
@@ -19,7 +20,11 @@ nextBtn.addEventListener('click', () => {
     state = 1;
 
   } else if (state === 1) {
+    flip.style.display = 'block';
     page4.style.display = 'block';
+    setTimeout(() => {
+      flip.classList.add('open');
+    }, 20);
     state = 2;
   }
 
@@ -36,7 +41,11 @@ backBtn.addEventListener('click', () => {
     state = 0;
 
   } else if (state === 2) {
-    page4.style.display = 'none';
+    flip.classList.remove('open');
+    setTimeout(() => {
+      flip.style.display = 'none';
+      page4.style.display = 'none';
+    }, 800);
     state = 1;
   }
 
@@ -44,4 +53,3 @@ backBtn.addEventListener('click', () => {
 });
 
 updateButtons();
-
