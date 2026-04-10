@@ -1,5 +1,4 @@
 .book {
-
   width: 1000px;
   height: 800px;
   margin: 50px auto;
@@ -7,142 +6,9 @@
   position: relative; 
   overflow: visible;
   perspective: 2000px; 
-
 }
-
-
-
-.cover {
-  margin-left: auto;
-  z-index: 3;
-}
-
-.cover .front {
-
-  background-image: url('assets/book/cover.png');
-  background-size: cover;
-  background-position: center;
-  z-index: 3;
-
-}
-
-
-
-.cover .back {
-
-  width: 1000px;
-  left: -500px;
-
-  display: flex;
-
-}
-
-
-
-
-.btn-container {
-
-  text-align: center;
-  margin: 20px auto;
-
-}
-
-#Next, #Back {
-
-  padding: 10px 30px;
-  font-size: 16px;
-  font-family: 'Courier New', Courier, monospace;
-  cursor: pointer;
-
-}
-
-#Next:disabled, #Back:disabled {
-
-  opacity: 0.3;
-  cursor: not-allowed;
-
-}
-
-
-
-
-#page-1 {
-
-  width: 500px;
-  height: 800px;
-  background: #00ccff;
-  background-image: url('assets/book/aboutme.png');
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
-  transition: ease-in 0.5s;
-
-}
-
-
-#page-1:hover {
-
-  border: 5px outset rgb(77, 36, 36);
-  border-radius: 5px;
-  transform: scale(1.06);
-  transition: ease-in 0.5s;
-
-}
-
-
-
-
-#page-2 {
-
-  width: 500px;
-  height: 800px;
-  background-image: url('assets/book/startpage.png');
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
-  transition: ease-in 0.5s;
-  cursor: pointer;
-
-}
-
-#page-2-front {
-  background-image: url('assets/book/startpage.png');
-  background-size: cover;
-  background-position: center;
-}
-
-
-#page-2:hover {
-
-  border: 5px outset rgb(77, 36, 36);
-  border-radius: 5px;
-  transform: scale(1.06);
-  transition: ease-in 0.5s;
-
-}
-
-
-#page-4 {
-
-  width: 500px;
-  height: 800px;
-  background: #ff0000;
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: none;
-  z-index: 0;
-
-}
-
-
-
 
 .flip {
-
   width: 500px;
   height: 800px;
   position: absolute;
@@ -151,31 +17,118 @@
   transform-style: preserve-3d;
   transform-origin: left center;
   transition: transform 0.8s ease;
-  cursor: pointer;
   z-index: 2;
-
 }
 
 .flip .front {
-
   width: 500px;
   height: 800px;
   position: absolute;
+  top: 0;
+  left: 0;
   backface-visibility: hidden;
-
 }
 
-
 .flip .back {
-
   width: 500px;
   height: 800px;
   position: absolute;
+  top: 0;
+  left: 0;
   backface-visibility: hidden;
   transform: rotateY(180deg);
-
 }
 
 .flip.open {
   transform: rotateY(-180deg);
+}
+
+.cover {
+  z-index: 3;
+}
+
+.cover .front {
+  background-image: url('assets/book/cover.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.cover .back {
+  width: 1000px;
+  left: -500px;
+  display: flex;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.btn-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+#Next, #Back {
+  padding: 10px 30px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+}
+
+#Next:disabled, #Back:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+#page-1 {
+  width: 500px;
+  height: 800px;
+  background-image: url('assets/book/aboutme.png');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: ease-in 0.5s;
+}
+
+#page-1:hover {
+  border: 5px outset rgb(77, 36, 36);
+  border-radius: 5px;
+  transform: scale(1.06);
+  transition: ease-in 0.5s;
+}
+
+#page-2 {
+  width: 500px;
+  height: 800px;
+  background-image: url('assets/book/startpage.png');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 500px;
+  display: none;
+  transition: ease-in 0.5s;
+  cursor: pointer;
+}
+
+#page-2:hover {
+  border: 5px outset rgb(77, 36, 36);
+  border-radius: 5px;
+  transform: scale(1.06);
+  transition: ease-in 0.5s;
+}
+
+#page-2-front {
+  background-image: url('assets/book/startpage.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#page-4 {
+  width: 500px;
+  height: 800px;
+  background: #ff0000;
+  position: absolute;
+  top: 0;
+  left: 500px;
+  display: none;
+  z-index: 0;
 }
