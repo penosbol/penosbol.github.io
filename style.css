@@ -19,6 +19,8 @@
   transform-origin: left center;
   transition: transform 0.8s ease;
   cursor: pointer;
+  position: relative;
+  z-index: 2;
 
 }
 
@@ -55,6 +57,10 @@
 
 .page {
   display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
 }
 
 #Open {
@@ -71,7 +77,7 @@
 .page.visible {
 
   display: block;
-  
+
 }
 
 .page .front {
