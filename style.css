@@ -57,15 +57,20 @@
 
 
 
-#Open {
+.btn-container {
 
-  display: block;
+  text-align: center;
   margin: 20px auto;
+
+}
+
+#Open, #Close {
+
   padding: 10px 30px;
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
   cursor: pointer;
-
+  
 }
 
 
