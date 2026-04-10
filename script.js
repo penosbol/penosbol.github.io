@@ -61,12 +61,5 @@ document.getElementById('page-1').addEventListener('click', () => {
 
 });
 
-if (state === 0) {
-  cover.classList.add('open');
-  page2.style.display = 'block';
-  page2.style.pointerEvents = 'none';
-  setTimeout(() => {
-    page2.style.pointerEvents = 'auto';
-  }, 800);
-  state = 1;
+
 }
