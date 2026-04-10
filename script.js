@@ -1,20 +1,20 @@
 const cover = document.querySelector('.cover');
 const page2 = document.getElementById('page-2');
-const btn = document.getElementById('Open');
-let state = 0;
+const openBtn = document.getElementById('Open');
+const closeBtn = document.getElementById('Close');
 
-btn.addEventListener('click', () => {
-    if (state === 0) {
-        cover.classList.add('open');
-        page2.style.display = 'block';
-        btn.textContent = 'Close';
-        state = 1;
-    } else if (state === 1) {
-        cover.classList.remove('open');
-        page2.style.display = 'none';
-        btn.textContent = 'Open';
-        state = 0;
-    }
-    }
-    )
-;
+openBtn.addEventListener('click', () => {
+  cover.classList.add('open');
+  page2.style.display = 'block';
+  openBtn.style.display = 'none';
+  closeBtn.style.display = 'inline';
+});
+
+closeBtn.addEventListener('click', () => {
+  cover.classList.remove('open');
+  closeBtn.style.display = 'none';
+  openBtn.style.display = 'inline';
+  setTimeout(() => {
+    page2.style.display = 'none';
+  }, 800); // waits for cover flip animation to finish
+});
