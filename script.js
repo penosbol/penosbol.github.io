@@ -20,6 +20,7 @@ nextBtn.addEventListener('click', () => {
   } else if (state === 1) {
     cover.style.zIndex = '0';
     flip.style.display = 'block';
+    flip.style.pointerEvents = 'auto';
     page4.style.display = 'block';
     setTimeout(() => {
       flip.classList.add('open');
@@ -41,6 +42,7 @@ backBtn.addEventListener('click', () => {
     setTimeout(() => {
       cover.style.zIndex = '3';
       flip.style.display = 'none';
+      flip.style.pointerEvents = 'none';
       page4.style.display = 'none';
     }, 800);
     state = 1;
@@ -53,7 +55,6 @@ updateButtons();
 document.getElementById('page-1').addEventListener('click', () => {
   window.location.href = 'aboutme.html';
 });
-
 
 document.getElementById('page-2').addEventListener('click', () => {
   window.location.href = 'aboutme.html';
