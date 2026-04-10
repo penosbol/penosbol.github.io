@@ -13,46 +13,27 @@
 
 
 .cover {
-
-  width: 500px;
-  height: 800px;
   margin-left: auto;
-  transform-style: preserve-3d;
-  transform-origin: left center;
-  transition: transform 0.8s ease;
-  position: relative;
-
+  z-index: 3;
 }
 
 .cover .front {
 
-  width: 500px;
-  height: 800px;
   background-image: url('assets/book/cover.png');
   background-size: cover;
   background-position: center;
-  position: absolute;
-  backface-visibility: hidden;
   z-index: 3;
 
 }
 
-.cover.open {
 
-  transform: rotateY(-180deg);
-
-}
 
 .cover .back {
 
   width: 1000px;
-  height: 800px;
-  display: flex;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
-  position: absolute;
-  top: 0;
   left: -500px;
+
+  display: flex;
 
 }
 
@@ -172,7 +153,6 @@
   transition: transform 0.8s ease;
   cursor: pointer;
   z-index: 2;
-  display: none;
 
 }
 
@@ -180,17 +160,16 @@
 
   width: 500px;
   height: 800px;
-  background: transparent;
   position: absolute;
   backface-visibility: hidden;
 
 }
 
+
 .flip .back {
 
   width: 500px;
   height: 800px;
-  background: #ff6600;
   position: absolute;
   backface-visibility: hidden;
   transform: rotateY(180deg);
@@ -198,7 +177,5 @@
 }
 
 .flip.open {
-
   transform: rotateY(-180deg);
-
 }

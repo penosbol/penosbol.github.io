@@ -1,4 +1,4 @@
-const cover = document.querySelector('.cover');
+const cover = document.querySelector('.fli.cover');
 const page2 = document.getElementById('page-2');
 const page4 = document.getElementById('page-4');
 const flip = document.getElementById('page-2-flip');
