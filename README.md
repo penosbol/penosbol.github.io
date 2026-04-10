@@ -1,6 +1,9 @@
-Essentially just my own website really? I havent started it lol
+Zaza's World
 
 
-photo credits: 
+
+**Photo Credits:** 
+
 @jycephoto - Instagram
+
 @catmantoo 
