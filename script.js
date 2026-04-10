@@ -15,10 +15,10 @@ function updateButtons() {
 nextBtn.addEventListener('click', () => {
   if (state === 0) {
     cover.classList.add('open');
-    cover.style.pointerEvents = 'none';
     page2.style.display = 'block';
     state = 1;
   } else if (state === 1) {
+    cover.style.zIndex = '0';
     flip.style.display = 'block';
     flip.style.pointerEvents = 'auto';
     page4.style.display = 'block';
@@ -32,7 +32,6 @@ nextBtn.addEventListener('click', () => {
 
 backBtn.addEventListener('click', () => {
   if (state === 1) {
-    cover.style.pointerEvents = 'auto';
     cover.classList.remove('open');
     setTimeout(() => {
       page2.style.display = 'none';
@@ -41,6 +40,7 @@ backBtn.addEventListener('click', () => {
   } else if (state === 2) {
     flip.classList.remove('open');
     setTimeout(() => {
+      cover.style.zIndex = '3';
       flip.style.display = 'none';
       flip.style.pointerEvents = 'none';
       page4.style.display = 'none';
@@ -57,5 +57,5 @@ document.getElementById('page-1').addEventListener('click', () => {
 });
 
 document.getElementById('page-2').addEventListener('click', () => {
-  window.location.href = 'startup.html';
+  window.location.href = 'aboutme.html';
 });
