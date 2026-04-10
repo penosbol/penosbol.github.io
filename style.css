@@ -67,3 +67,33 @@
   cursor: pointer;
 
 }
+
+.cover.open ~ .page:first-of-type {
+
+  display: flex;
+
+}
+
+.page .front {
+
+  width: 1000px;
+  height: 800px;
+  display: flex;
+
+}
+
+.left-page {
+
+  width: 500px;
+  height: 800px;
+  background: #00ccff;
+
+}
+
+.right-page {
+
+  width: 500px;
+  height: 800px;
+  background: #15ff00;
+
+}
