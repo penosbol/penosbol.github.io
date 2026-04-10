@@ -132,3 +132,7 @@
   display: none;
   z-index: 0;
 }
+
+.page {
+  display: none;
+}
