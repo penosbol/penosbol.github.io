@@ -115,16 +115,32 @@
 
   width: 500px;
   height: 800px;
-  background: #15ff00;
+  background-image: url('assets/book/aboutme.png');
+  background-size: cover;
+  background-position: center;
   position: absolute;
   top: 0;
   right: 0;
   display: none;
+  transition: ease-in 0.5s;
+  cursor: pointer;
 
 }
 
 #page-2-front {
-  background: #15ff00;
+  background-image: url('assets/book/aboutme.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
+#page-2:hover {
+
+  border: 5px outset rgb(77, 36, 36);
+  border-radius: 5px;
+  transform: scale(1.06);
+  transition: ease-in 0.5s;
+
 }
 
 
