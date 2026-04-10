@@ -89,6 +89,10 @@
   width: 500px;
   height: 800px;
   background: #00ccff;
+  background-image: url('assets/book/aboutme.png');
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
 
 }
 

@@ -53,3 +53,10 @@ backBtn.addEventListener('click', () => {
 });
 
 updateButtons();
+
+
+document.getElementById('page-1').addEventListener('click', () => {
+
+  window.location.href = 'aboutme.html';
+
+});
