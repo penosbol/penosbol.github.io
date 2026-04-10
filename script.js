@@ -53,3 +53,8 @@ updateButtons();
 document.getElementById('page-1').addEventListener('click', () => {
   window.location.href = 'aboutme.html';
 });
+
+
+document.getElementById('page-2').addEventListener('click', () => {
+  window.location.href = 'aboutme.html';
+});
