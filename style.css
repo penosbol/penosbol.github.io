@@ -44,8 +44,9 @@
 
 .cover .back {
 
-  width: 500px;
+  width: 1000px;
   height: 800px;
+  display: flex;
   backface-visibility: hidden;
   transform: rotateY(180deg);
   position: absolute;
