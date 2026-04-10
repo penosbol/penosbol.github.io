@@ -17,8 +17,6 @@
   transform-style: preserve-3d;
   transform-origin: left center;
   transition: transform 0.8s ease;
- 
-  pointer-events: none;
   z-index: 2;
 }
 
@@ -61,6 +59,7 @@
   display: flex;
   backface-visibility: hidden;
   transform: rotateY(180deg);
+  pointer-events: none;
 }
 
 .btn-container {
@@ -88,6 +87,7 @@
   background-position: center;
   cursor: pointer;
   transition: ease-in 0.5s;
+  pointer-events: auto;
 }
 
 #page-1:hover {
