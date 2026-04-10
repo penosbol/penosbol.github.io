@@ -61,5 +61,3 @@ document.getElementById('page-1').addEventListener('click', () => {
 
 });
 
-
-}
