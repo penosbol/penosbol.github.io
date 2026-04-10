@@ -29,6 +29,8 @@
   background-image: url('assets/book/cover.png');
   background-size: cover;
   background-position: center;
+  position: absolute;
+  backface-visibility: hidden;
 
 }
 
@@ -40,12 +42,17 @@
 
 .cover .back {
 
-  display: none;
+  width: 500px;
+  height: 800px;
+  background: red;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
 
 }
 
 .page {
-
   display: none;
-
 }
