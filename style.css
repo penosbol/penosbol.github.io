@@ -98,6 +98,16 @@
 }
 
 
+#page-1:hover {
+
+  border: 10px dashed black;
+  border-radius: 2px;
+
+}
+
+
+
+
 #page-2 {
 
   width: 500px;
