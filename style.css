@@ -52,7 +52,6 @@
   position: absolute;
   top: 0;
   left: -500px;
-  flex-direction: row-reverse;
 
 }
 
@@ -75,7 +74,8 @@
   width: 500px;
   height: 800px;
   background: #00ccff;
-
+  margin-left: auto;
+  
 }
 
 #page-2 {
