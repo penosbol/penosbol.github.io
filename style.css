@@ -94,14 +94,16 @@
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  transition: ease-in 0.5s;
 
 }
 
 
 #page-1:hover {
 
-  border: 10px dashed black;
-  border-radius: 2px;
+  border: 5px outset black;
+  transform: scale(1.25);
+  transition: ease-in 0.5s;
 
 }
 
