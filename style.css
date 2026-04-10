@@ -56,15 +56,7 @@
 
 }
 
-.page {
 
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-}
 
 #Open {
 
@@ -77,21 +69,8 @@
 
 }
 
-.page.visible {
 
-  display: block;
-
-}
-
-.page .front {
-
-  width: 1000px;
-  height: 800px;
-  display: flex;
-
-}
-
-.left-page {
+#page-1 {
 
   width: 500px;
   height: 800px;
@@ -99,10 +78,28 @@
 
 }
 
-.right-page {
+#page-2 {
 
   width: 500px;
   height: 800px;
   background: #15ff00;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  z-index: 0;
+
+}
+
+#page-4 {
+
+  width: 500px;
+  height: 800px;
+  background: #ff0000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  z-index: 0;
 
 }
