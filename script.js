@@ -1,9 +1,15 @@
 const cover = document.querySelector('.cover');
+const btn = document.getElementById('Open');
 
-cover.addEventListener('click', () => {
-    cover.classList.toggle('open');
+btn.addEventListener(
+    
+    'click', () => {
+
+        cover.classList.toggle('open');
+        btn.textContent = cover.classList.contains('open') ? 'Close' : 'Open';
 
     }
+
 )
 
 ;
