@@ -68,10 +68,10 @@
 
 }
 
-.cover.open ~ .page:first-of-type {
+.page.visible {
 
-  display: flex;
-
+  display: block;
+  
 }
 
 .page .front {
