@@ -13,13 +13,12 @@ function updateButtons() {
 }
 
 nextBtn.addEventListener('click', () => {
-
   if (state === 0) {
     cover.classList.add('open');
     page2.style.display = 'block';
     state = 1;
-
   } else if (state === 1) {
+    cover.style.zIndex = '0';
     flip.style.display = 'block';
     page4.style.display = 'block';
     setTimeout(() => {
@@ -27,20 +26,18 @@ nextBtn.addEventListener('click', () => {
     }, 20);
     state = 2;
   }
-
   updateButtons();
 });
 
 backBtn.addEventListener('click', () => {
-
   if (state === 1) {
     cover.classList.remove('open');
     setTimeout(() => {
       page2.style.display = 'none';
     }, 800);
     state = 0;
-
   } else if (state === 2) {
+    cover.style.zIndex = '3';
     flip.classList.remove('open');
     setTimeout(() => {
       flip.style.display = 'none';
@@ -48,16 +45,11 @@ backBtn.addEventListener('click', () => {
     }, 800);
     state = 1;
   }
-
   updateButtons();
 });
 
 updateButtons();
 
-
 document.getElementById('page-1').addEventListener('click', () => {
-
   window.location.href = 'aboutme.html';
-
 });
-
