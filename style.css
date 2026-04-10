@@ -20,7 +20,7 @@
   transition: transform 0.8s ease;
   cursor: pointer;
   position: relative;
-  z-index: 3;
+
 
 }
 
@@ -46,14 +46,13 @@
 
   width: 500px;
   height: 800px;
-  background: red;
   backface-visibility: hidden;
   transform: rotateY(180deg);
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
-  
+
+
 }
 
 .page {
