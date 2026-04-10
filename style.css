@@ -94,7 +94,6 @@
   background-size: cover;
   background-position: center;
   cursor: pointer;
-  z-index: 1;
 
 }
 
@@ -108,7 +107,6 @@
   top: 0;
   right: 0;
   display: none;
-  z-index: 1;
 
 }
 
