@@ -52,7 +52,7 @@
   position: absolute;
   top: 0;
   left: -500px;
-
+  flex-direction: row-reverse;
 
 }
 
@@ -102,4 +102,9 @@
   display: none;
   z-index: 0;
 
+}
+
+
+.flip {
+  display: none;
 }
