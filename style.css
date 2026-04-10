@@ -118,9 +118,7 @@
   background-image: url('assets/book/startpage.png');
   background-size: cover;
   background-position: center;
-  position: absolute;
-  top: 0;
-  right: 0;
+
   display: none;
   transition: ease-in 0.5s;
   cursor: pointer;
