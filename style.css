@@ -20,7 +20,7 @@
   transition: transform 0.8s ease;
   cursor: pointer;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 
 }
 
@@ -52,14 +52,17 @@
   position: absolute;
   top: 0;
   left: 0;
-
+  z-index: 1;
+  
 }
 
 .page {
+
   display: none;
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
 
 }
 
