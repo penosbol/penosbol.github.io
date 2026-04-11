@@ -57,5 +57,5 @@ document.getElementById('page-1').addEventListener('click', () => {
 });
 
 document.getElementById('page-2').addEventListener('click', () => {
-  window.location.href = 'aboutme.html';
+  window.location.href = 'startup.html';
 });
